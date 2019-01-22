@@ -96,7 +96,7 @@ namespace _30Steps
 
         }
 
-        public void Proba(int nb_chevaux, int nb_joue) //exo 5.11
+        public void Proba(int nb_chevaux, int nb_joue) //exo 6.11
         {
             int nf = Factorielle(nb_chevaux);
             int pf = Factorielle(nb_joue);
@@ -107,7 +107,7 @@ namespace _30Steps
             Console.WriteLine("\nDans l'ordre : Une chance sur " + X +" de gagner\nDans le desordre : Une chance sur " + Y + " de gagner");
         }
 
-        public void Input_20p1() //5.12
+        public void Input_20p1() //6.12
         {
             int[] temp = new int[20];
 
@@ -124,7 +124,7 @@ namespace _30Steps
             }
         }
 
-        public void Input0_12() //5.13
+        public void Input0_12() //6.13
         {
             List<int> temp = new List<int>();
 
@@ -145,6 +145,41 @@ namespace _30Steps
 
             Console.WriteLine("\nMax : " + temp.Max() + "\nPos : " + ( 
 temp.IndexOf(temp.Max()) + 1));
+
+
+        }
+
+        public void Input_notes() //6.14
+        {
+            List<int> temp = new List<int>();
+
+            int i = 0;
+            int max = 0;
+            int pos = 0;
+            int count = 0;
+
+            do
+            {
+                Console.WriteLine("Entrez nb " + (i + 1) + " : ");
+                temp.Add(int.Parse(Console.ReadLine()));
+                i++;
+
+            } while (temp[i - 1] != 0);
+
+            temp.RemoveAt(i - 1);
+            double avg = temp.Average();
+
+
+            for (int j = 0; j < temp.Count(); j++)
+            {
+                if (temp[j] > avg)
+                {
+                    count++;
+                }
+            }
+
+            Console.WriteLine("Moyenne : " + avg);
+            Console.WriteLine("Nb notes > moyenne : " + count);
 
 
         }

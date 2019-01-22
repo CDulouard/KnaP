@@ -10,13 +10,6 @@ namespace _30Steps
     {
         static void Main(string[] args)
         {
-            Millenair test = new Millenair();
-            hippo test2 = new hippo();
-            test.Input0_12();
-
-
-
-
 
         }
     }
