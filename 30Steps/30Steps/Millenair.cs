@@ -106,6 +106,23 @@ namespace _30Steps
 
             Console.WriteLine("\nDans l'ordre : Une chance sur " + X +" de gagner\nDans le desordre : Une chance sur " + Y + " de gagner");
         }
+
+        public void Input_20p1() //5.12
+        {
+            int[] temp = new int[20];
+
+            for (int i = 1; i <= 20; i++)
+            {
+
+                Console.WriteLine("Entrez nb " + i + " : ");
+                temp[i - 1] = int.Parse(Console.ReadLine());
+
+            }
+            for(int i = 0; i < 20; i++)
+            {
+                Console.WriteLine(temp[i] + 1);
+            }
+        }
     }
 
     
