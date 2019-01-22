@@ -8,6 +8,19 @@ namespace _30Steps
 {
     class hippo
     {
+        public void exercice64()
+        {   // la fonction retounre le produit de chaque case du tableau avec toute les cases d'avant. 
+            int[] tableau = {1, 4, 6, 2, 6};
+            Console.Write("Tableau: \n");
+            int i;
+            for (i = 1; i < 5; i++)
+            {
+                Console.Write("{0} \n", tableau[i-1]);
+                tableau[i] = tableau[i] * tableau[i - 1];
+            }
+            Console.Write("{0} \n", tableau[i - 1]);
+
+        }
         public void exercice55()
         {
             int j, n;
