@@ -13,7 +13,7 @@ namespace _30Steps
             Millenair test = new Millenair();
             hippo test2 = new hippo();
 
-            test2.exercice64();
+            test2.exercice66();
 
             test.Input0_12();
 
