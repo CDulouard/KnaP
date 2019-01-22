@@ -30,6 +30,36 @@ namespace _30Steps
             return ans;
         }
 
+        public void Input_20()
+        {
+            int temp;
+            int max = 0;
+            int pos = 0;
+            
+            for (int i = 1; i <= 20; i++)
+            {
+                
+                Console.WriteLine("Entrez nb " + i + " : ");
+                temp =  int.Parse(Console.ReadLine());
+
+                if (i == 1)
+                {
+                    max = temp;
+                    pos = i;
+                }
+                else
+                {
+                    if (temp > max)
+                    {
+                        max = temp;
+                        pos = i;
+                    }
+                }
+            }
+            Console.WriteLine("max : " + max + "\npos : " + pos);
+
+        }
+
     }
 
     

@@ -11,7 +11,7 @@ namespace _30Steps
         static void Main(string[] args)
         {
             Millenair test = new Millenair();
-            Console.WriteLine(test.Factorielle(3));
+            test.Input_20();
         }
     }
 }
