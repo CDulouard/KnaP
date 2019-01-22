@@ -8,7 +8,7 @@ namespace _30Steps
 {
     class Millenair
     {
-        public int sum(int value) //exo 5.6
+        public int Sum(int value) //exo 5.6
         {
             int ans = 0;
 
@@ -122,6 +122,11 @@ namespace _30Steps
             {
                 Console.WriteLine(temp[i] + 1);
             }
+        }
+
+        public void Input0_12() //5.13
+        {
+
         }
     }
 
