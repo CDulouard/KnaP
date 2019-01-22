@@ -12,7 +12,7 @@ namespace _30Steps
         {
             Millenair test = new Millenair();
 
-            test.Input0();
+            test.Proba(10, 5);
 
            
 
