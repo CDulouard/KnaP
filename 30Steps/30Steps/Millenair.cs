@@ -126,6 +126,26 @@ namespace _30Steps
 
         public void Input0_12() //5.13
         {
+            List<int> temp = new List<int>();
+
+            int i = 0;
+            int max = 0;
+            int pos = 0;
+
+            Console.WriteLine("Entrez nb " + (i + 1) + " : ");
+            temp.Add(int.Parse(Console.ReadLine()));
+
+            while (temp[i] != 0)
+            {
+                i++;
+                Console.WriteLine("Entrez nb " + (i + 1) + " : ");
+                temp.Add(int.Parse(Console.ReadLine()));
+               
+            }
+
+            Console.WriteLine("\nMax : " + temp.Max() + "\nPos : " + ( 
+temp.IndexOf(temp.Max()) + 1));
+
 
         }
     }
