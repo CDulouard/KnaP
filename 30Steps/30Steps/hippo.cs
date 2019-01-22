@@ -25,9 +25,11 @@ namespace _30Steps
         }
         public void exercice510()
         {
-            int E, sommedue, M, reste, Nb10e, Nb5e, Nb1e;
+            int E, sommedue, M, reste, Nb10e, Nb5e;
             E = 1;
             sommedue = 0;
+            Nb10e = 0;
+            Nb5e = 0;
             Console.Write("entrez le montant : ");
             E = Convert.ToInt32(Console.ReadLine());
             sommedue += E;
@@ -35,13 +37,17 @@ namespace _30Steps
             Console.Write("montant versé : ");
             M = Convert.ToInt32(Console.ReadLine());
             reste = M - sommedue;
-            Nb10e = 0;
             while (reste >= 10)
             {
                 Nb10e++;
                 reste = reste - 10;
             }
-
+            if (reste >= 5)
+            {
+                Nb5e = 1;
+                reste = reste - 5;
+            }
+            Console.Write("billets de 10 euros : {0} \n Billets de 5 euros : {1} \n Pieces de 1 euro : {2}", Nb10e, Nb5e, reste);
         }   
         
     }
