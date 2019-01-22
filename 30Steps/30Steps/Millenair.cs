@@ -20,7 +20,7 @@ namespace _30Steps
             return ans;
         }
 
-        public int Factorielle(int value)
+        public int Factorielle(int value) //exo 5.7
         {
             int ans = 1;
             for (int i = 1; i <= value; i++)
@@ -30,7 +30,7 @@ namespace _30Steps
             return ans;
         }
 
-        public void Input_20()
+        public void Input_20() //exo 5.8
         {
             int temp;
             int max = 0;
@@ -60,7 +60,7 @@ namespace _30Steps
 
         }
 
-        public void Input0()
+        public void Input0() //exo 5.9
         {
             int temp;
             int max = 0;
@@ -96,6 +96,16 @@ namespace _30Steps
 
         }
 
+        public void Proba(int nb_chevaux, int nb_joue) //exo 5.11
+        {
+            int nf = Factorielle(nb_chevaux);
+            int pf = Factorielle(nb_joue);
+            int nmpf = Factorielle(nb_chevaux - nb_joue);
+            double X = nf / nmpf;
+            double Y = nf / (pf * nmpf);
+
+            Console.WriteLine("\nDans l'ordre : Une chance sur " + X +" de gagner\nDans le desordre : Une chance sur " + Y + " de gagner");
+        }
     }
 
     

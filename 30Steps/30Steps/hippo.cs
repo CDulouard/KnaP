@@ -42,7 +42,7 @@ namespace _30Steps
                 reste = reste - 10;
             }
 
-        }
+        }   
         
     }
 }
