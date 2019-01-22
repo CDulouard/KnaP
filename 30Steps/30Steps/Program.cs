@@ -12,12 +12,9 @@ namespace _30Steps
         {
             Millenair test = new Millenair();
 
-            test.Input_20();
+            test.Input0();
 
-            hippo hippovar= new hippo();
-            hippovar.exercice55();
-            Console.WriteLine(test.Factorielle(3));
-            Console.ReadKey();
+           
 
         }
     }
