@@ -8,7 +8,7 @@ namespace _30Steps
 {
     class Millenair
     {
-        public int sum(int value)
+        public int sum(int value) //exo 5.6
         {
             int ans = 0;
 
@@ -19,5 +19,20 @@ namespace _30Steps
             
             return ans;
         }
+
+        public int Factorielle(int value)
+        {
+            int ans = 1;
+            for (int i = 1; i <= value; i++)
+            {
+                ans *= i;
+            }
+            return ans;
+        }
+
     }
+
+    
+
+
 }
